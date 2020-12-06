@@ -1,0 +1,4 @@
+/target
+*.md
+*.smd
+asm/obj

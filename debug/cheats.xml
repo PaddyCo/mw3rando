@@ -1,0 +1,57 @@
+<!-- Name genesis.xml and put in MAME cheat directory -->
+<mamecheat version="1">
+  <cheat desc="Go to Area">
+    <parameter>
+      <item value="0x0000">Home</item>
+      <item value="0x0200">Fairy Village</item>
+      <item value="0x0400">Sewer</item>
+      <item value="0x0500">Purapril City</item>
+      <item value="0x0601">Lilypad, Dwarf Village</item>
+      <item value="0x0e01">Childam, Darkworld Village</item>
+      <item value="0x0c02">Begonia, Dragon Village</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pw@FF9668=param</action>
+    </script>
+  </cheat>
+  <cheat desc="Zero X position">
+    <script state="on">
+      <action>maincpu.pw@FFC801=0x00</action>
+    </script>
+  </cheat>
+  <cheat desc="Zero Y position">
+    <script state="on">
+      <action>maincpu.pw@FFC901=0x00</action>
+    </script>
+  </cheat>
+  <cheat desc="All boots">
+    <script state="on">
+      <action>maincpu.pb@FF95CD=0xFF</action>
+    </script>
+  </cheat>
+  <cheat desc="Starting boots">
+    <script state="on">
+      <action>maincpu.pb@FF95CD=0x40</action>
+    </script>
+  </cheat>
+  <cheat desc="All weapons">
+    <script state="on">
+      <action>maincpu.pb@FF95CA=0xFF</action>
+    </script>
+  </cheat>
+  <cheat desc="Starting weapons">
+    <script state="on">
+      <action>maincpu.pb@FF95CA=0x08</action>
+    </script>
+  </cheat>
+  <cheat desc="Infinite Elixirs">
+    <script state="run">
+      <action>maincpu.pb@FF959D=0x01</action>
+    </script>
+  </cheat>
+  <cheat desc="Test">
+    <script state="run">
+      <action>maincpu.pb@FFDDE5=0x3A</action>
+    </script>
+  </cheat>
+</mamecheat>
